@@ -1,0 +1,40 @@
+
+<div class="circles">
+    <div class="circle">Design
+    </div>
+    <div class="circle">Develop
+    </div>
+    <div class="circle">Deliver
+    </div>
+</div>
+
+<style>
+body{
+    font-family:Arial;
+}
+.circle{
+    width:160px;
+    height:160px;
+    margin:20px 53px 20px 0;
+    float:left;
+    text-align:center;
+    font-size:36px;
+    line-height:160px;
+    border-radius:50%;
+    position:relative;
+    border:20px solid #ff9800;
+}
+.circle:before{
+    content:"";
+    width:200px;
+    height:20px;
+    position:absolute;
+    top:70px;
+    left:106px;
+    background-color:#ff9800;
+    transform:rotate(-45deg)
+}
+.circle:last-child:before{
+    display:none;
+}
+</style>
